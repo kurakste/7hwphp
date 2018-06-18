@@ -1,0 +1,170 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+addImageToDb	app/itemsModel.php	/^function addImageToDb($path, $itemId) $/;"	f
+addItemToCart	app/cartModel.php	/^function addItemToCart($itemId)$/;"	f
+addNewItem	controllers/itemController.php	/^function addNewItem()$/;"	f
+addNewItemForm	controllers/itemController.php	/^function addNewItemForm()$/;"	f
+addNewItemToDb	app/itemsModel.php	/^function addNewItemToDb ($input) $/;"	f
+addNewOrderToDatabase	models/orderModel.php	/^function addNewOrderToDatabase(int $userId, array $cartsItems) $/;"	f
+addNewUser	controllers/userController.php	/^function addNewUser() $/;"	f
+addNewUserToDB	app/userModel.php	/^function addNewUserToDB(string $user, $password)$/;"	f
+addToCart	controllers/cartsController.php	/^function addToCart($itemId)$/;"	f
+allItemsID	components/catalog.php	/^<?php $allItemsID = getItemIDArray(); ?>$/;"	v
+arr	app/route.php	/^    $arr = array_filter($arr); $/;"	v
+arr	app/route.php	/^    $arr = explode('\/', $_SERVER['REQUEST_URI']);$/;"	v
+callController	app/route.php	/^function callController(array $input)  $/;"	f
+cartsItems	controllers/orederController.php	/^    $cartsItems = $_SESSION['cart'];$/;"	v
+changeItem	controllers/itemController.php	/^function changeItem()$/;"	f
+changeItemInDb	app/itemsModel.php	/^function changeItemInDb($input) $/;"	f
+checkUserAuth	controllers/userController.php	/^function checkUserAuth()$/;"	f
+chekUserAuthInDB	app/userModel.php	/^function chekUserAuthInDB(string $user, $password)$/;"	f
+clearInput	controllers/userController.php	/^function clearInput(string $input) $/;"	f
+clearPOSTArrayForMysql	engine/dblib.php	/^function clearPOSTArrayForMysql()$/;"	f
+content	engine/rendering.php	/^        $content = str_replace('{{'.$name.'}}', $value, $content);$/;"	v
+content	engine/rendering.php	/^    $content = file_get_contents('..\/view\/'.$name.'.php');$/;"	v
+content	engine/rendering.php	/^    $content = file_get_contents('..\/view\/templates\/'.$file.'.php');$/;"	v
+content	public/index.php	/^$content = callController($controllerName);$/;"	v
+controller	app/route.php	/^    $controller = $controller[0];$/;"	v
+controller	app/route.php	/^    $controller = array_shift($input); $/;"	v
+controller	app/route.php	/^    $controller = explode('?', $controller);$/;"	v
+controllerName	public/index.php	/^$controllerName = getControllerName();$/;"	v
+count	app/itemsModel.php	/^    $count = count ($_FILES['myfile']['name']);$/;"	v
+data	app/itemsModel.php	/^    $data = clearPOSTArrayForMysql();$/;"	v
+data	controllers/itemController.php	/^    $data = is_array($_POST) ? $_POST : false; $/;"	v
+data	engine/rendering.php	/^function directView(array $data =[]) $/;"	v
+data	engine/rendering.php	/^function view($name, array $data =[]) $/;"	v
+dbClose	engine/dblib.php	/^function dbClose() $/;"	f
+dbOpen	engine/dblib.php	/^function dbOpen()$/;"	f
+dd	engine/debug.php	/^function dd($var)$/;"	f
+de	engine/debug.php	/^function de($var)$/;"	f
+directView	engine/rendering.php	/^function directView(array $data =[]) $/;"	f
+fname	app/itemsModel.php	/^    $fname = (string)$fname;$/;"	v
+fname	controllers/userController.php	/^    $fname = $_POST['fname'];$/;"	v
+fpassword	controllers/userController.php	/^    $fpassword = $_POST['fpassword'];$/;"	v
+getCartAsArray	app/cartModel.php	/^function getCartAsArray()$/;"	f
+getCartEditPage	controllers/cartsController.php	/^function getCartEditPage()$/;"	f
+getCatalogAsHTML	controllers/catalogController.php	/^function getCatalogAsHTML()$/;"	f
+getControllerName	app/route.php	/^function getControllerName()$/;"	f
+getImagesFromDB	app/itemsModel.php	/^function getImagesFromDB ($id) $/;"	f
+getItemAsHTML	controllers/itemController.php	/^function getItemAsHTML($input) $/;"	f
+getItemFromDb	app/itemsModel.php	/^function getItemFromDb($id) $/;"	f
+getItemIDArray	app/itemsModel.php	/^function getItemIDArray () $/;"	f
+getOrdersByStatusFromDb	models/orderModel.php	/^function getOrdersByStatusFromDb($status)$/;"	f
+getTitleImage	app/itemsModel.php	/^function getTitleImage ($id) $/;"	f
+icount	components/cart.php	/^$icount = count($_SESSION['cart']);$/;"	v
+id	controllers/itemController.php	/^    $id = isset($_POST['id']) ? (int)$_POST['id'] : 0; $/;"	v
+image	app/itemsModel.php	/^    $image = $images[0]['pathtoimage']; $/;"	v
+images	app/itemsModel.php	/^    $images = getImagesFromDB($id);$/;"	v
+images	components/item.php	/^        <?php $images = getImagesFromDB($input['id']) ?>$/;"	v
+input	engine/rendering.php	/^function renderComponent($file, $input=[]) $/;"	v
+input	engine/rendering.php	/^function renderPhp($file, array $input =[]) $/;"	v
+item	controllers/itemController.php	/^    $item = getItemFromDb($id);$/;"	v
+item	controllers/itemController.php	/^    $item = getItemFromDb($input);$/;"	v
+itemId	app/itemsModel.php	/^    $itemId = mysqli_insert_id($db);$/;"	v
+itemId	app/route.php	/^        $itemId = (int)array_shift($input) ?? 0; $/;"	v
+itemId	app/route.php	/^        $itemId = array_shift($input); $/;"	v
+itemId	models/orderModel.php	/^        $itemId = $item['id'];$/;"	v
+itemInCart	controllers/cartsController.php	/^    $itemInCart = getCartAsArray();$/;"	v
+key	engine/dblib.php	/^        foreach ($_POST as $key=>$value) {$/;"	v
+loadCartFromDb	controllers/cartsController.php	/^function loadCartFromDb()$/;"	f
+loadLibraries	engine/autoload.php	/^function loadLibraries($path) {$/;"	f
+makeNewOrder	controllers/orederController.php	/^function makeNewOrder()$/;"	f
+mysql	engine/dblib.php	/^    $mysql = mysqli_connect($/;"	v
+name	engine/rendering.php	/^    foreach ($vars as $name => $value) {$/;"	v
+orderId	models/orderModel.php	/^        $orderId = $row['id'];$/;"	v
+orderId	models/orderModel.php	/^    $orderId = mysqli_insert_id($db);$/;"	v
+out	app/itemsModel.php	/^        $out = $out[0];$/;"	v
+out	app/itemsModel.php	/^        $out = false;$/;"	v
+out	app/route.php	/^        $out = '<h1>ERROR 404<\/h1>';$/;"	v
+out	app/route.php	/^        $out = addNewItem();$/;"	v
+out	app/route.php	/^        $out = addNewItemForm();$/;"	v
+out	app/route.php	/^        $out = addNewUser();$/;"	v
+out	app/route.php	/^        $out = addToCart($itemId);$/;"	v
+out	app/route.php	/^        $out = changeItem();$/;"	v
+out	app/route.php	/^        $out = checkUserAuth();$/;"	v
+out	app/route.php	/^        $out = getCartEditPage();$/;"	v
+out	app/route.php	/^        $out = getCatalogAsHTML();$/;"	v
+out	app/route.php	/^        $out = getItemAsHTML($par);$/;"	v
+out	app/route.php	/^        $out = makeNewOrder();$/;"	v
+out	app/route.php	/^        $out = removeItem();$/;"	v
+out	app/route.php	/^        $out = removeItemFromCart($itemId);$/;"	v
+out	app/route.php	/^        $out = saveChangeInItem();$/;"	v
+out	app/route.php	/^        $out = showAuthForm();$/;"	v
+out	app/route.php	/^        $out = showContactPage();$/;"	v
+out	app/route.php	/^        $out = showMainPage();$/;"	v
+out	app/route.php	/^        $out = showOpenOrders();$/;"	v
+out	app/route.php	/^        $out = showRegisterForm();$/;"	v
+out	app/route.php	/^        $out = signOut();$/;"	v
+out	app/route.php	/^    $out = '';$/;"	v
+out	app/userModel.php	/^            $out = ($password === $result['password']);$/;"	v
+out	app/userModel.php	/^            $out = false;$/;"	v
+out	app/userModel.php	/^        $out = false;$/;"	v
+out	controllers/cartsController.php	/^    $out = renderComponent('editCart');$/;"	v
+out	controllers/catalogController.php	/^    $out = renderComponent ('catalog');$/;"	v
+out	controllers/itemController.php	/^    $out = $data ? addNewItemToDb($data) : false; $/;"	v
+out	controllers/itemController.php	/^    $out = $data ? changeItemInDb($data) : false; $/;"	v
+out	controllers/itemController.php	/^    $out = renderComponent('item', $item);$/;"	v
+out	controllers/orederController.php	/^    $out = renderComponent('orders', $result);$/;"	v
+out	engine/dblib.php	/^    $out = [];$/;"	v
+out	engine/rendering.php	/^     $out = ob_get_clean();$/;"	v
+out	engine/rendering.php	/^    $out = renderComponent('authtopmenu');$/;"	v
+out	models/orderModel.php	/^    $out =[];$/;"	v
+out2	models/orderModel.php	/^            $out2 = [];$/;"	v
+par	app/route.php	/^        $par = (int)array_shift($input) ?? 0; $/;"	v
+password	controllers/userController.php	/^    $password = crypt($fpassword, SALT);$/;"	v
+query	app/cartModel.php	/^    $query = mysqli_query($db, $request);$/;"	v
+query	app/itemsModel.php	/^    $query = mysqli_query($db, $request);$/;"	v
+query	app/itemsModel.php	/^   $query = mysqli_query($db, $request);$/;"	v
+query	app/userModel.php	/^    $query = mysqli_query($db, $request);$/;"	v
+query	models/orderModel.php	/^        $query = mysqli_query($db, $request);$/;"	v
+query	models/orderModel.php	/^    $query = mysqli_query($db, $request);$/;"	v
+query2	models/orderModel.php	/^            $query2 = mysqli_query($db, $request);$/;"	v
+removeCartsItemFromDb	app/cartModel.php	/^function removeCartsItemFromDb($itemId)$/;"	f
+removeItem	controllers/itemController.php	/^function removeItem()$/;"	f
+removeItemFromCart	controllers/cartsController.php	/^function removeItemFromCart($itemId)$/;"	f
+removeItemFromDb	app/itemsModel.php	/^function removeItemFromDb($itemId) $/;"	f
+render	engine/rendering.php	/^function render($file, array $vars = []) $/;"	f
+renderAuthMenu	engine/rendering.php	/^function renderAuthMenu() $/;"	f
+renderComponent	engine/rendering.php	/^function renderComponent($file, $input=[]) $/;"	f
+renderPhp	engine/rendering.php	/^function renderPhp($file, array $input =[]) $/;"	f
+request	app/cartModel.php	/^    $request = "DELETE FROM carts WHERE id='$itemId';";$/;"	v
+request	app/cartModel.php	/^    $request = "INSERT INTO carts(userid, itemid) VALUE ".$/;"	v
+request	app/cartModel.php	/^    $request =$/;"	v
+request	app/itemsModel.php	/^    $request = "DELETE FROM imagesForItems WHERE imageid='$itemId';";$/;"	v
+request	app/itemsModel.php	/^    $request = "DELETE FROM items WHERE id='$itemId';";$/;"	v
+request	app/itemsModel.php	/^    $request = "INSERT INTO imagesForItems (imageid, pathtoimage) ".$/;"	v
+request	app/itemsModel.php	/^    $request = "INSERT INTO items (`Name`, `condition`, `description`, `price`)". $/;"	v
+request	app/itemsModel.php	/^    $request = "UPDATE items SET `Name`='($fname', `condition` = '$fcondition', $/;"	v
+request	app/itemsModel.php	/^    $request = 'SELECT * FROM items where id=\\''.$id.'\\';';$/;"	v
+request	app/itemsModel.php	/^   $request = 'SELECT * FROM imagesForItems where imageid=\\''.$id.'\\';';$/;"	v
+request	app/itemsModel.php	/^   $request = 'SELECT id FROM items;';$/;"	v
+request	app/userModel.php	/^    $request = 'INSERT INTO users(name, password) VALUES (\\''$/;"	v
+request	app/userModel.php	/^    $request = 'SELECT id, name, password, role FROM users WHERE name=\\''$/;"	v
+request	models/orderModel.php	/^        $request = "INSERT INTO ordersStrings (`orderid`, `itemId`, `amount`)$/;"	v
+request	models/orderModel.php	/^        $request =$/;"	v
+request	models/orderModel.php	/^    $request = "INSERT INTO orders (`userid`) VALUES ('$userId');";$/;"	v
+request	models/orderModel.php	/^    $request =$/;"	v
+result	app/cartModel.php	/^    $result = [];$/;"	v
+result	app/userModel.php	/^        $result = mysqli_fetch_assoc($query);$/;"	v
+result	controllers/orederController.php	/^    $result = addNewOrderToDatabase($userId, $cartsItems);$/;"	v
+result	controllers/orederController.php	/^    $result = getOrdersByStatusFromDb(1);$/;"	v
+saveChangeInItem	controllers/itemController.php	/^function saveChangeInItem() $/;"	f
+showAuthForm	controllers/userController.php	/^function showAuthForm() $/;"	f
+showContactPage	controllers/contact.php	/^function showContactPage() {$/;"	f
+showLoginForm	controllers/userController.php	/^function showLoginForm() $/;"	f
+showMainPage	controllers/home.php	/^function showMainPage() {$/;"	f
+showOpenOrders	controllers/orederController.php	/^function showOpenOrders() $/;"	f
+showRegisterForm	controllers/userController.php	/^function showRegisterForm() $/;"	f
+signOut	controllers/userController.php	/^function signOut()$/;"	f
+sum	components/cart.php	/^$sum = 0;$/;"	v
+uploaddir	app/itemsModel.php	/^    $uploaddir = '.\/img\/';$/;"	v
+uploadfile	app/itemsModel.php	/^       $uploadfile = $uploaddir.basename($_FILES['myfile']$/;"	v
+user	app/userModel.php	/^    $user = mysqli_real_escape_string($db, $user); $/;"	v
+userId	app/cartModel.php	/^    $userId = $_SESSION['userid'];$/;"	v
+userId	controllers/orederController.php	/^    $userId = (integer)$_SESSION['userid'];$/;"	v
+vars	engine/rendering.php	/^function render($file, array $vars = []) $/;"	v
+view	engine/rendering.php	/^function view($name, array $data =[]) $/;"	f
